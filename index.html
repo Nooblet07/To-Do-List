@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <div id="wrapper">
+    <h1>Derek's daily To-Do-List</h1>
+    <ol id="myList">
+        <li ondblclick="toggleLineOut(this)">Wake up</li>
+        <li ondblclick="toggleLineOut(this)">Daughter</li>
+        <ul>
+            <!-- Click on a task to line through as completed -->
+            <li ondblclick="toggleLineOut(this)">Wake up</li>
+            <li ondblclick="toggleLineOut(this)">Change diaper</li>
+            <li ondblclick="toggleLineOut(this)">Get dressed</li>
+            <li ondblclick="toggleLineOut(this)">Get milk</li>
+            <li ondblclick="toggleLineOut(this)">Make breakfast</li>
+        </ul>
+        <li ondblclick="toggleLineOut(this)">Daisy</li>
+        <ul>
+            <!-- Click on a task to line through as completed -->
+            <li ondblclick="toggleLineOut(this)">Give food and fresh water</li>
+            <li ondblclick="toggleLineOut(this)">Let outside to use bathroom</li>
+            <li ondblclick="toggleLineOut(this)">Pick up dog poop (if any)</li>
+        </ul>
+        <li ondblclick="toggleLineOut(this)">Hygiene</li>
+        <ul>
+            <!-- Click on a task to line through as completed -->
+            <li ondblclick="toggleLineOut(this)">Shower</li>
+            <li ondblclick="toggleLineOut(this)">Brush teeth</li>
+            <li ondblclick="toggleLineOut(this)">Get dressed</li>
+        </ul>
+        <li ondblclick="toggleLineOut(this)">Work</li>
+        <ul>
+            <!-- Click on a task to line through as completed -->
+            <li ondblclick="toggleLineOut(this)">Attend class</li>
+            <li ondblclick="toggleLineOut(this)">Make EPIC to-do-list</li>
+        </ul>
+        <li ondblclick="toggleLineOut(this)">After Work</li>
+        <ul>
+            <!-- Click on a task to line through as completed -->
+            <li ondblclick="toggleLineOut(this)">Make dinner</li>
+            <li ondblclick="toggleLineOut(this)">Play/spend time with family</li>
+            <li ondblclick="toggleLineOut(this)">Family walk</li>
+        </ul>
+        <li ondblclick="toggleLineOut(this)">Bedtime</li>
+        <ul>
+            <li ondblclick="toggleLineOut(this)">Daughter bath</li>
+            <li ondblclick="toggleLineOut(this)">Brush daughter's teeth</li>
+            <li ondblclick="toggleLineOut(this)">Put pajamas on daughter</li>
+            <li ondblclick="toggleLineOut(this)">Lay daughter down</li>
+            <li ondblclick="toggleLineOut(this)">Brush teeth</li>
+            <li ondblclick="toggleLineOut(this)">Put on pajamas</li>
+            <li ondblclick="toggleLineOut(this)">15 minutes of no screen time</li>
+        </ul>
+    </ol>
+    <h2>Last minute To-do items:</h2>
+    <!-- Form to add new to-do item -->
+    <form id="addItemForm">
+        <input type="text" id="itemInput" placeholder="New To-do item" required>
+        <button type="submit">Add</button>
+      </form>
+      <ul id="list">
+      </ul>
+      </div>
+    <script src="./index.js"></script>
+</body>
+</html>

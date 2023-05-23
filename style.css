@@ -1,0 +1,11 @@
+h1 { 
+    color: rgb(255, 0, 225);
+  }
+
+body {
+    background-color:rgb(255, 213, 0)
+}
+
+.line-out {
+    text-decoration: line-through;
+  }
